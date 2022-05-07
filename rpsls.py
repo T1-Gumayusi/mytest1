@@ -43,10 +43,9 @@ def rpsls(player_choice):
     return
 print("欢迎使用RPSLS游戏")
 player_choice=input("请输入您的选择：")
-print("------------")
-print("您的选择为：%s" % player_choice)
-rpsls(player_choice)
-
-
-
-
+if player_choice=='石头' or player_choice=='剪刀' or player_choice=='史波克' or player_choice=='纸' or player_choice=='蜥蜴':
+ print("------------")
+ print("您的选择为：%s" % player_choice)
+ rpsls(player_choice)
+else:
+ print('Error: No Correct Name')
