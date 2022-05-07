@@ -4,7 +4,7 @@ def name_to_number(name):
     number=0
  elif name=='史波克':
     number=1
- elif name=='纸':
+ elif name=='布':
     number=2
  elif name=='蜥蜴':
     number=3
@@ -17,7 +17,7 @@ def number_to_name(number):
   elif number==1:
       name='史波克'
   elif number==2:
-      name='纸'
+      name='布'
   elif number==3:
       name='蜥蜴'
   else:
@@ -43,7 +43,7 @@ def rpsls(player_choice):
     return
 print("欢迎使用RPSLS游戏")
 player_choice=input("请输入您的选择：")
-if player_choice=='石头' or player_choice=='剪刀' or player_choice=='史波克' or player_choice=='纸' or player_choice=='蜥蜴':
+if player_choice=='石头' or player_choice=='剪刀' or player_choice=='史波克' or player_choice=='布' or player_choice=='蜥蜴':
  print("------------")
  print("您的选择为：%s" % player_choice)
  rpsls(player_choice)
